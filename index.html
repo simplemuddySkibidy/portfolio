@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nurbolot — iOS Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button id="theme">☾</button>
+    <button id="burger">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="social header-github" href="https://github.com/simplemuddySkibidy" target="_blank">
+      <img src="github.svg" alt="GitHub">
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p>Hello, I am Nurbolot</p>
+        <h1>IOS<br>Developer</h1>
+        <a class="underline" href="#contact">Contact Me</a>
+      </div>
+      <img class="photo" src="WhatsApp Image 2026-11-05 at 23.07.12.jpeg" alt="Nurbolot">
+    </section>
+
+    <section id="about">
+      <h2>about</h2>
+      <p>I am an aspiring software developer with a strong foundation in programming logic and mobile technologies. Currently focused on mastering Swift, SwiftUI, and modern app architecture to build clean, high performance iOS applications.</p>
+      <ul class="stats">
+        <li><h3>IOS/Swift</h3><small>1+ years experience</small></li>
+        <li><h3>UI/UX Design</h3><small>2+ years experience</small></li>
+        <li><h3>Git/Github</h3><small>120+ Hours Experience</small></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Here are some of the iOS applications and web projects I have built recently. Each project reflects my focus on clean code, responsive design, and smooth user interaction.</p>
+      <div class="skills">
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="">Swift</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">Java</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">Figma</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>I would love to hear about your project and how I can help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+      <form id="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <span class="error" id="emailError"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button class="send" type="submit">Send message</button>
+        <p id="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="mailto:nkarybekov228@gmail.com">nkarybekov228@gmail.com</a>
+    <div>
+      <a class="social" href="https://t.me/Ueudb" target="_blank"><img src="telegram.svg" alt="Telegram"></a>
+      <a class="social" href="https://www.instagram.com/ssaul_goodman?mdxt=MTE2NXNkNWh1dDlteA%3D%3D&utm_source=qr" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
+      <a class="social" href="https://github.com/simplemuddySkibidy" target="_blank"><img src="github.svg" alt="GitHub"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
