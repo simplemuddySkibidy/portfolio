@@ -113,3 +113,52 @@ form.addEventListener('submit', function (event) {
     success.textContent = '';
   }
 });
+
+
+/* ---------- 4. Greeting ---------- */
+const greeting = document.getElementById('greeting');
+const askNameButton = document.getElementById('askName');
+
+// shows the greeting (with the name, if we have one)
+function showGreeting(name) {
+  greeting.textContent = name
+    ? `Привет, ${name}!`
+    : 'Добро пожаловать!';
+}
+
+// asks for the name and remembers it
+function askName() {
+  const visitorName = prompt('Как тебя зовут?');
+  if (visitorName && visitorName.trim()) {
+    localStorage.setItem('visitorName', visitorName.trim());
+  } else {
+    localStorage.removeItem('visitorName');
+  }
+  showGreeting(localStorage.getItem('visitorName'));
+}
+
+askNameButton.addEventListener('click', askName);
+
+// if the name is already saved, show it right away
+showGreeting(localStorage.getItem('visitorName'));
+
+
+/* ---------- 5. Scroll to top button ---------- */
+const toTopButton = document.getElementById('toTop');
+
+// show the button only after scrolling down a bit
+function toggleToTop() {
+  if (window.scrollY > 300) {
+    toTopButton.classList.add('show');
+  } else {
+    toTopButton.classList.remove('show');
+  }
+}
+
+window.addEventListener('scroll', toggleToTop);
+toggleToTop();
+
+toTopButton.addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
